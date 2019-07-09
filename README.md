@@ -12,13 +12,13 @@ File "RScag" is the code for robust scagnostics presented in our paper.
 
 ### Scag-05
 
-File "Scag-05" contains the code for Scag-05 proposed on the "Graph-Theoretic Scagnostics" paper on InfoVis 2005.  
+File "Scag-05" contains the code for Scag-05 proposed on the "Graph-Theoretic Scagnostics" paper on InfoVis 2005 published by Leland Wilkinson et al.   
 
 Scag-05 defines a point as outlier when the point has degree 1 and the adjacent edge of this point is larger than a threshold.  
 
 ### Scag-06
 
-File "Scag-06" contains the code of new version of scagnostics proposed on the "High-Dimensional Visual Analytics: Interactive Exploration Guided by Pairwise Views of Point Distributions" paper on TVCG 2006.  
+File "Scag-06" contains the code of new version of scagnostics proposed on the "High-Dimensional Visual Analytics: Interactive Exploration Guided by Pairwise Views of Point Distributions" paper on TVCG 2006 published by Leland Wilkinson et al.  
 
 Scag-06 defines a point as outlier then the adjacent edges of this point are larger than a threshold. It can delete interior outliers, but it becomes less robust than Scag-05.  
 
