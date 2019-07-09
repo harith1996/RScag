@@ -24,7 +24,7 @@ Scag-06 defines a point as outlier then the adjacent edges of this point are lar
 
 ### Dataset
 
-File "dataset" are two types of data we used. "dataset/real_data" contains more than 69K real scatterplots. "dataset/data_analysis" contains the R code we used to automatically generate 60M scatterplots with different distributions, such as binormal, clustered, exponential, funnel etc.
+File "dataset" are two types of data we used. "dataset/real_data" contains more than 69K real scatterplots. "dataset/data_analysis" contains the R code we used to automatically generate synthetic scatterplots with different distributions, such as binormal, clustered, exponential, funnel etc.
 
 ## Contact
 
