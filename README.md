@@ -28,4 +28,4 @@ File "dataset" are two types of data we used. "dataset/real_data" contains more 
 
 ## Contact
 
-If you have any problem with the code or the dataset, please contact cloudseawang@gmail.com.
+If you have any problem with the code or the dataset, please contact zywangx@gmail.com.
