@@ -1,6 +1,6 @@
 # Improving the Robustness of Scagnostics
 
-Code and dataset of the paper "Improving the Robustness of Scagnostics" sumbitted to IEEE InfoVis 2019.  
+Code and dataset of the paper "Improving the Robustness of Scagnostics" accepted by IEEE InfoVis 2019.  
 
 ## File Description
 
