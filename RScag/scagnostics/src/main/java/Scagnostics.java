@@ -19,7 +19,7 @@
  * REPRESENTATION OR WARRANTY OF ANY KIND CONCERNING THE MERCHANTABILITY
  * OF THIS SOFTWARE OR ITS FITNESS FOR ANY PARTICULAR PURPOSE.
  */
-package RScag.scagnostics;
+package RScag.scagnostics.src.main.java;
 
 import javax.swing.plaf.basic.BasicScrollPaneUI;
 import javax.swing.text.html.HTMLDocument;

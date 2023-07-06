@@ -19,7 +19,7 @@
  * REPRESENTATION OR WARRANTY OF ANY KIND CONCERNING THE MERCHANTABILITY
  * OF THIS SOFTWARE OR ITS FITNESS FOR ANY PARTICULAR PURPOSE.
  */
-package RScag.scagnostics;
+package RScag.scagnostics.src.main.java;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -28,8 +28,9 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] argv) {
-        int numBins = 50;    // user setting for number of bins
-        int maxBins = 1000;  // user setting for maximum number of nonempty bins allowed (maxBins >= numBins*numBins)
+        int numBins = 50; // user setting for number of bins
+        int maxBins = 1000; // user setting for maximum number of nonempty bins allowed (maxBins >=
+                            // numBins*numBins)
 
         String fold_path = "Rscag//data//";
         File[] files = getFileList(fold_path, ".csv");
@@ -50,7 +51,8 @@ public class Main {
         File directory = new File(path);
         File[] files = directory.listFiles(new FileFilter() {
             public boolean accept(File pathname) {
-                if (pathname.getName().toLowerCase().endsWith(suffixFinal)) return true;
+                if (pathname.getName().toLowerCase().endsWith(suffixFinal))
+                    return true;
                 return false;
             }
         });
@@ -69,7 +71,7 @@ public class Main {
         try {
             String record;
             record = fin.readLine();
-            //Get the scagnosticsLabels
+            // Get the scagnosticsLabels
             record = replaceSeparatorsWithBlanks(record);
             StringTokenizer st = new StringTokenizer(record, " ");
             int col = 0;
@@ -80,9 +82,9 @@ public class Main {
                 variableLabels[col] = st.nextToken();
                 col++;
             }
-            //Count the number of rows
+            // Count the number of rows
             int numRows = 0;
-//            record = fin.readLine();//ignore the label
+            // record = fin.readLine();//ignore the label
             while (record != null) {
                 record = fin.readLine();
                 numRows++;
@@ -90,10 +92,10 @@ public class Main {
             fin.close();
             System.out.println("Number of rows, cols " + numRows + " " + numVars);
 
-            //Read in the data
+            // Read in the data
             fin = new java.io.BufferedReader(new java.io.FileReader(fname));
             double[][] data = new double[numVars][numRows];
-//            record = fin.readLine();    //ignore line with scagnosticsLabels
+            // record = fin.readLine(); //ignore line with scagnosticsLabels
             record = fin.readLine();
             int j = 0;
             while (record != null) {
