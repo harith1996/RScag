@@ -156,7 +156,7 @@ public class Main {
             for (int j = 0; j < i; j++) {
                 Scagnostics s = new Scagnostics(points[j], points[i], numBins, maxBins);
                 scagnostics[k] = s.compute();
-                s.outputResult("scag/" + filename.split(".csv")[0] + ".scag.csv", scagnostics[k]);
+                s.outputResult("scag_results/" + filename.split(".csv")[0] + ".scag.csv", scagnostics[k]);
                 k++;
             }
         }
