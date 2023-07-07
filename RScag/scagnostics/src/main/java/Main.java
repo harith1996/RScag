@@ -37,7 +37,7 @@ public class Main {
         for (File file : files) {
             System.out.println(file.getName());
             double[][] points = getData(file);
-            double[][] scagnostics = computeScagnostics(points, numBins, maxBins);
+            double[][] scagnostics = computeScagnostics(points, numBins, maxBins, file.getName());
             System.out.println(Arrays.toString(scagnostics[0]));
         }
     }
@@ -146,7 +146,7 @@ public class Main {
         return source;
     }
 
-    private static double[][] computeScagnostics(double[][] points, int numBins, int maxBins) {
+    private static double[][] computeScagnostics(double[][] points, int numBins, int maxBins, String filename) {
         normalizePoints(points);
         int nDim = points.length;
         int numCells = nDim * (nDim - 1) / 2;
@@ -156,6 +156,7 @@ public class Main {
             for (int j = 0; j < i; j++) {
                 Scagnostics s = new Scagnostics(points[j], points[i], numBins, maxBins);
                 scagnostics[k] = s.compute();
+                s.outputResult("scag/" + filename.split(".csv")[0] + ".scag.csv", scagnostics[k]);
                 k++;
             }
         }
